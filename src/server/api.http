@@ -1,8 +1,8 @@
 ### TO GET ALL MOVIES
-GET http://localhost:3001/api/movies
+GET http://localhost:
 
 ### TO CREATE A NEW MOVIE TRAILER RECORD 
-POST http://localhost:3001/api/movies
+POST http://localhost:
 Content-Type: application/json 
 
 {
@@ -17,26 +17,26 @@ Content-Type: application/json
 }
 
 ### TO CREATE A NEW USER
-POST http://localhost:3001/api/user
+POST http://localhost:
 Content-Type: application/json 
 
 {
-    "name": "Natalia", 
-    "lastname": "Giraldo", 
-    "email": "ngiraldo@gmail.com", 
+    "name": "Whoever", 
+    "lastname": "Whoever", 
+    "email": "nwhoever@gmail.com", 
     "password": "12345"
 }
 
 ### TO AUTHENTICATE - LOGIN USER AND CREATING TOKEN
-POST http://localhost:3001/api/auth
+POST http://localhost:
 Content-Type: application/json 
 
 {
-    "email": "ngiraldo@gmail.com", 
+    "email": "nwhoever@gmail.com", 
     "password": "12345"
 }
 
 ### TO VALIDATE IF USER AUTHENTICATED
-GET http://localhost:3001/api/auth
+GET http://localhost:
 Content-Type: application/json 
-x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyQXV0aCI6eyJpZCI6IjY3NWIxMmQwNDk3YmIyOTJjMTI1OGUyYiJ9LCJpYXQiOjE3MzQwMjIxNzUsImV4cCI6MTczNDAyNTc3NX0.I0Tdh4FK-LwHYrDXfBsu0pjelD9oDduTCuAiOxR_DDU
+x-auth-token: 
