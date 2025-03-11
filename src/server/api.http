@@ -1,0 +1,42 @@
+### TO GET ALL MOVIES
+GET http://localhost:3001/api/movies
+
+### TO CREATE A NEW MOVIE TRAILER RECORD 
+POST http://localhost:3001/api/movies
+Content-Type: application/json 
+
+{
+    "title": "Gladiator", 
+    "release_date": "2000-05-05", 
+    "backdrop_path": "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/Ar7QuJ7sJEiC0oP3I8fKBKIQD9u.jpg", 
+    "poster_path": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg", 
+    "overview": "After the death of Emperor Marcus Aurelius, his devious son takes power and demotes Maximus, one of Rome's most capable generals who Marcus preferred. Eventually, Maximus is forced to become a gladiator and battle to the death against other men for the amusement of paying audiences.", 
+    "video": "https://www.youtube.com/watch?v=P5ieIbInFpg&ab_channel=ParamountMovies", 
+    "language_id": 1, 
+    "country_id": 1
+}
+
+### TO CREATE A NEW USER
+POST http://localhost:3001/api/user
+Content-Type: application/json 
+
+{
+    "name": "Natalia", 
+    "lastname": "Giraldo", 
+    "email": "ngiraldo@gmail.com", 
+    "password": "12345"
+}
+
+### TO AUTHENTICATE - LOGIN USER AND CREATING TOKEN
+POST http://localhost:3001/api/auth
+Content-Type: application/json 
+
+{
+    "email": "ngiraldo@gmail.com", 
+    "password": "12345"
+}
+
+### TO VALIDATE IF USER AUTHENTICATED
+GET http://localhost:3001/api/auth
+Content-Type: application/json 
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyQXV0aCI6eyJpZCI6IjY3NWIxMmQwNDk3YmIyOTJjMTI1OGUyYiJ9LCJpYXQiOjE3MzQwMjIxNzUsImV4cCI6MTczNDAyNTc3NX0.I0Tdh4FK-LwHYrDXfBsu0pjelD9oDduTCuAiOxR_DDU

@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fcfcf7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.card {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.backdrop-container {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+}
+.backdrop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.backdrop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.6); Ajusta el color y la opacidad */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+
+.poster {
+  position: absolute;
+  top: 15px;
+  left: 80px;
+  z-index: 1;
+  width: 350px;
+  height: 525px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.general-info {
+  position: absolute;
+  top: 70px;
+  left: 480px;
+  z-index: 1;
+  width: 850px;
+  height: 400px;
+  
+}
+
+.inside-general-info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  color: #fcfcf7;
+  align-items: start;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.title-overview {
+  font-weight: 600;
+  font-size: 22px;
+}
+.overview {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.trailer-btn {
+  color: #fcfcf7;
+  background-color: black;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 40px;
+  width: 90px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.trailer-btn:hover {
+  opacity: 0.7;
+}
+
+.trailer-container {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn {
+  color: #fcfcf7;
+  position: absolute;
+  z-index: 30;
+  top: 20px;
+  right: 150px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.inside-container-login {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Title styles */
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Label styles */
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Input styles */
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Button styles */
+.btn-form {
+  background-color: #4267b2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn-submit {
+  background-color: #4267b2;
+}
+
+.btn-signup {
+  background-color: #4caf50;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.search-container {
+  display: flex;
+}
+
+.admin-button {
+  margin-left: auto;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/**/
+.navbar {
+    background-color: #4267b2;
+    padding: 10px;
+    display: flex;
+    font-weight: 600;
+  }
+  .the-movie-app-title{
+    color: white;
+    font-size: 24px;
+  }
+  .search-container {
+    display: flex;
+    margin-left: 200px;
+  }
+  .input-search{
+    width: 500px;
+  }
+  .admin-button {
+    margin-left: auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 700;
+  }

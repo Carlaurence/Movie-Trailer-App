@@ -1,0 +1,45 @@
+{
+  "name": "movie-trailers-app",
+  "version": "1.0.0",
+  "description": "This app is a place where users can search a movie and then they will be able to see its movie-trailer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server/server.js",
+    "dev": "concurrently \"nodemon ./src/server/server.js\" \"webpack-dev-server --mode development --open\"",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos Salcedo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^9.1.0",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4",
+    "pg": "^8.13.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.2",
+    "sweetalert": "^2.1.2"
+  }
+}
